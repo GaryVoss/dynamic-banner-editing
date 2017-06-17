@@ -1,0 +1,125 @@
+.bnrWrap {
+	position: relative;
+	border: 1px solid $bodyCopy;
+	box-sizing: content-box;
+	&.bnr120x600 {
+		width: 120px;
+		height: 600px;
+	}
+	&.bnr160x600 {
+		width: 160px;
+		height: 600px;
+	}
+	&.bnr300x600 {
+		width: 300px;
+		height: 600px;
+	}
+	&.bnr300x250 {
+		width: 300px;
+		height: 250px;
+	}
+	&.bnr480x320 {
+		width: 480px;
+		height: 320px;
+	}
+	&.bnr970x250 {
+		width: 970px;
+		height: 250px;
+	}
+	&.bnr728x90 {
+		width: 728px;
+		height: 90px;
+	}
+	&.bnr468x60 {
+		width: 468px;
+		height: 60px;
+	}
+	&.bnr320x50 {
+		width: 320px;
+		height: 50px;
+	}
+	&.bnr300x50 {
+		width: 300px;
+		height: 50px;
+	}
+	* {
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;  }
+		
+	/* font override style start */
+	.font-gd {
+		font-family: $fontGoodDog!important;
+		line-height: 100%!important;
+	}
+	.font-bold {
+		font-weight: 700!important;
+	}
+	.font-60 {font-size: 60px!important;}
+	.font-55 {font-size: 55px!important;}
+	.font-50 {font-size: 50px!important;}
+	.font-45 {font-size: 45px!important;}
+	.font-40 {font-size: 40px!important;}
+	.font-35 {font-size: 35px!important;}
+	.font-30 {font-size: 30px!important;}
+	.font-25 {font-size: 25px!important;}
+	.font-20 {font-size: 20px!important;}
+	.font-19 {font-size: 19px!important;}
+	.font-18 {font-size: 18px!important;}
+	.font-17 {font-size: 17px!important;}
+	.font-16 {font-size: 16px!important;}
+	.font-15 {font-size: 15px!important;}
+	.font-14 {font-size: 14px!important;}
+	.font-13 {font-size: 13px!important;}
+	.font-12 {font-size: 12px!important;}
+	.font-11 {font-size: 11px!important;}
+	.font-10 {font-size: 10px!important;}
+	
+	.font-margin20 {margin-bottom: 20px!important;}
+	.font-margin15 {margin-bottom: 15px!important;}
+	.font-margin10 {margin-bottom: 10px!important;}
+	.font-margin5 {margin-bottom: 5px!important;}
+	
+	.font-white {color: #fff!important;}
+	.font-black {color: #575757!important;}
+	.font-blushPink {color: #e06287!important;}
+	.font-razzmatazz {color: #e0004d!important;}
+	.font-flame {color: #dc6b2f!important;}
+	.font-honey {color: #f1b434!important;}
+	.font-mintGreen {color: #00c19f!important;}
+	.font-conifer {color: #97d700!important;}
+	.font-iceBlue {color: #71c5e8!important;}
+	.font-havenBlue {color: #007cc3!important;}
+	.font-lavendar {color: #7474c1!important;}
+	.font-plum {color: #93328e!important;}
+	.font-maroonFlush {color: #a1224e!important;}
+	.font-lipstick {color: #a20067!important;}
+	.font-rawSienna {color: #cf4520!important;}
+	.font-poppy {color: #af272f!important;}
+	.font-teal {color: #28939d!important;}
+	.font-apple {color: #719949!important;}
+	.font-amazonGreen {color: #00594c!important;}
+	.font-classicBlue {color: #154ea2!important;}
+	.font-deepBurgundy {color: #7c2529!important;}
+	.font-blackcurrant {color: #6d2077!important;}
+	/* font override style end */
+}
+.bnrWrapper {
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+@import 'banners/bnr120x600';
+@import 'banners/bnr160x600';
+@import 'banners/bnr300x600';
+@import 'banners/bnr300x250';
+@import 'banners/bnr480x320';
+@import 'banners/bnr970x250';
+@import 'banners/bnr728x90';
+@import 'banners/bnr468x60';
+@import 'banners/bnr320x50';
+@import 'banners/bnr300x50';

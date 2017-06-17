@@ -1,0 +1,767 @@
+/** ///////////// - elements.scss - start - ///////////// */
+header {
+	height: 70px;
+	padding: 22px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.logo {
+	width: 177px;
+	height: 26px;
+}
+.divide {
+	border-bottom: 1px solid $extraLightGrey;
+	margin-bottom: 10px;
+	@include bp(med) {
+		margin-bottom: 20px;
+	}
+}
+.tabWrap {
+
+}
+.btn {
+	width: 100%;
+	background: $extraLightGrey;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: 2px;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+	@include bp(sml) {
+		width: auto;
+	}
+}
+.tab {
+	&:hover, &.active {
+		background: $mandy;
+		color: $white;
+	}
+	&.disable {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+.pickerWrap {
+	@include clearfix();
+	position: relative;
+	.swatch {
+		position: relative;
+		width: 45px;
+		height: 45px;
+		margin-right: 10px;
+		background: $white;
+		border: 1px solid $lightGrey;
+		border-radius: 2px;
+		float: left;
+		overflow: hidden!important;
+		&.noColor {
+			&:after {
+				bottom: calc(50% - 1px);
+				left: -11px;
+				background: #DA2218;
+				content: "";
+				height: 2px;
+				width: 65px;
+				position: absolute;
+				z-index: 100;
+				pointer-events: none;
+				-ms-transform: rotate(-45deg);
+			    -webkit-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+		}
+	}
+	.inputWrap {
+		width: calc(100% - 55px);
+		float: left;
+	}
+	.pickerOutput {
+		float: left;
+		width: calc(100% - 45px);
+		-webkit-user-select: all;
+		-moz-user-select: all;
+		-ms-user-select: all;
+		user-select: all; 
+		text-transform: uppercase;
+	}
+	.pickerTrigger {
+		float: right;
+		width: 45px;
+		height: 43px;
+		padding: 6px;
+		border-left: 1px solid $lightGrey;
+	}
+	.picker {
+		display: none;
+		width: 100%;
+		background: #eee;
+		border-radius: 2px;
+		position: absolute;
+		left: 0;
+		top: calc(100% + 5px);
+		z-index: 100;
+		padding: 10px 5px 0px 5px;
+		&:after {
+			bottom: 100%;
+			left: calc(100% - 24px);
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			z-index: 100;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: #eee;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+		@include bp(med) {
+			margin-top: -15px;
+		}
+		ul {
+			width: 100%;
+			@include clearfix();
+		}
+		p {
+			margin: 0 5px;
+		}
+		li {
+			width: calc(20% - 10px);
+			height: 25px;
+			margin: 0px 5px 10px 5px;
+			border: 1px solid $lightGrey;
+			border-radius: 2px;
+			background: $white;
+			float: left;
+			cursor: pointer;
+			&.noColor {
+				text-align: center;
+				padding: 0;
+				position: relative;
+				overflow: hidden!important;
+				&:after {
+					bottom: calc(50% - 1px);
+					left: -5px;
+					background: #DA2218;
+					content: "";
+					height: 2px;
+					width: calc(100% + 10px);
+					position: absolute;
+					z-index: 100;
+					pointer-events: none;
+					-ms-transform: rotate(-35deg);
+				    -webkit-transform: rotate(-35deg);
+				    transform: rotate(-35deg);
+				}
+			}
+		}
+	}
+}
+.fieldRow {
+	width: 100%;
+	float: left;
+	.fieldCol {
+		width: 100%;
+		float: left;
+		position: relative;
+		margin-right: 20px;
+		@include bp(sml) {
+			width: auto;
+			.errorMes {
+				width: 100%;
+				position: absolute;
+				top: 73px;
+				left: 0;
+				z-index: 1;
+				padding: 10px;
+			}
+		}
+	}
+}
+.fieldWrap {
+	&.disable {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}
+.inputWrap, .selectWrap {
+	width: 100%;
+	position: relative;
+	background: $white;
+	border: 1px solid $lightGrey;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	overflow: hidden;
+	cursor: pointer;
+	.fieldIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 15px 13px 14px 12px;
+		background: $white;
+		color: $bodyCopy;
+		pointer-events: none;
+		z-index: 10;
+		&.icon-cross {
+			cursor: pointer;	
+		}	
+	}
+	* {
+		cursor: pointer;
+	}	
+}
+.selectWrap {
+	padding-right: 30px;
+	&.smlField {
+		padding-right: 0;
+		select {
+			width: auto;
+			padding-right: 30px;
+		}
+	}
+	
+}
+textarea {
+	min-height: 150px;
+	padding: 12px;
+	resize: vertical;
+}
+input, select, textarea {
+	width: 100%;
+	color: $bodyCopy;
+	outline: none;
+	border: none;
+}
+input, select {
+	padding: 12px 15px 12px 12px;
+}
+input {
+	-webkit-appearance:none;
+	&:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0px 1000px white inset;
+	    -webkit-text-fill-color: $bodyCopy!important;
+	}
+	&[name=postcode], &[name=postcodeSearch] {
+		text-transform: uppercase;
+		&::-webkit-input-placeholder {
+		   text-transform: none;
+		}
+		&:-moz-placeholder {
+		   text-transform: none;
+		}
+		&::-moz-placeholder {
+		   text-transform: none;
+		}
+		&:-ms-input-placeholder {
+		   text-transform: none;
+		}
+	}
+}
+select {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	background: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+	-moz-appearance: radio-container;
+	appearance: none;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+.desc {
+	margin-bottom: 5px;
+	color: $persianGreen;
+	font-family: $fontRobotoBold;
+}
+.formWrap {
+	@include clearfix();
+}
+
+/** //global radio buttons starts */
+.radioLabel {
+	display: inline-block;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 10px;
+	font-size: 1.4rem;
+	cursor: pointer;
+	input {
+		position: absolute;
+		width: auto;
+		z-index: -1;
+		opacity: 0;
+	}
+	input:checked ~ .radioCheck:after {
+		display: block;
+	}
+	.radioCheck {
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		height: 18px;
+		width: 18px;
+		border-radius: 50%;
+		border: 1px solid $bodyCopy;
+		background: $white;
+		&::after {
+			content: '';
+			position: absolute;
+			display: none;
+			left: 2px;
+			top: 2px;
+			height: 12px;
+			width: 12px;
+			border: none;
+			box-sizing: border-box;
+			border-radius: 50%;
+			background: $persianGreen;		
+		}
+		&.withTick {
+			&::after {
+				background: none;
+				left: -1px;
+				top: -1px;
+				height: 19px;
+				width: 19px;
+				background-image: url("../imgs/tickFormBlue.svg");
+				background-position: top left; 
+				background-size: 18px 18px;
+				background-repeat: no-repeat;
+			}
+		}
+		.icon {
+			font-size: 1rem;
+		}
+	}
+}
+/** //global radio buttons end */
+
+.confirmShow {
+	display: none;
+}
+
+.extraField {
+	display: none;
+}
+.sizeContent {
+	display: none;
+	&.first {
+		display: block;
+	}
+}
+.campaignContent {
+	display: none;
+	&.content0 {
+		display: block;
+	}
+}
+
+/** //slider style start */
+.galleryWrap {
+	background: $white;
+	padding: 10px 5px;
+	border: 1px solid $lightGrey;
+	border-radius: 2px;
+	box-sizing: border-box;
+	overflow: hidden!important;
+}
+.gallery {
+	.galItem {
+		opacity: 0.5;
+		margin: 0 5px;
+		&.selected {
+			opacity: 1;
+			.img {
+				position: relative;
+				&:after {
+					content: " ";
+					width: calc(100% - 6px);
+					height: calc(100% - 6px);
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 100;
+					pointer-events: none;
+					border: 3px solid $persianGreen;
+				}				
+			}
+		}
+		img {
+			margin-bottom: 0;
+		}
+	}
+}
+.slick-arrow {
+	position: absolute;
+	top: calc(50% - 28px);
+	z-index: 1;
+	width: 10px;
+	height: 20px;
+	margin: 0;
+	&.slideLeft {
+		left: 10px;
+	}
+	&.slideRight {
+		right: 10px;
+	}
+	@include bp(med) {
+		top: calc(50% - 28px);
+		width: 15px;
+		height: 30px;
+		&.slideLeft {
+			left: 20px;
+		}
+		&.slideRight {
+			right: 20px;
+		}
+	}
+}
+.slick-dots {
+// 	display: none!important;
+	width: 100%;
+	height: 30px;
+	background: none;
+	padding: 10px;
+	margin: 0 0 0 0!important;
+	list-style: none;
+	text-align: center;
+	@include bp(med) {
+		height: 27px;
+	}
+	li {
+	    position: relative;
+	    display: inline-block;
+	    width: 20px;
+	    margin: 0 2px;
+	    padding: 0;
+	    cursor: pointer; 
+	    button {
+			font-size: 0;
+			display: block;
+			width: 20px;
+			height: 20px;
+			padding: 5px;
+			cursor: pointer;
+			color: transparent;
+			border: 0;
+			outline: none;
+			background: transparent; 
+			&:before {
+				font-family: 'icomoon' !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				font-size: 1.6rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				content: $iconCodeDotOutline;
+				color: $persianGreen;
+				opacity: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			&:hover, &:focus {
+				outline: none;
+			}
+		}
+		&.slick-active {
+	        button {
+		        &:before {
+					content: $iconCodeDot;
+					color: $persianGreen;
+					opacity: 1;
+				}
+			}
+        }
+	}
+}
+/** //slider style end */
+
+/** //loader style start */
+.loaderWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    .loader {
+	    display: block;
+	    position: relative;
+	    left: 50%;
+	    top: 50%;
+	    z-index: 1001; 
+	    width: 160px;
+	    height: 160px;
+	    margin: -80px 0 0 -80px;
+	    border-radius: 50%;
+	    border: 6px solid transparent;
+	    border-color: $white;
+	    .innerRings {
+		    display: block;
+		    position: relative;
+		    left: 4px;
+		    top: 4px;
+		    width: 140px;
+		    height: 140px;
+		    border-radius: 50%;
+		    border: 3px solid transparent;
+		    border-color: $white;
+		    border-right-color: transparent;
+		    -webkit-animation: spinClock 6s linear infinite; 
+		    		animation: spinClock 6s linear infinite;
+		    &:before {
+			    content: "";
+			    position: absolute;
+			    top: 6px;
+			    left: 6px;
+			    right: 6px;
+			    bottom: 6px;
+			    border-radius: 50%;
+			    border: 2px solid transparent;
+			    border-color: $white;
+			    border-bottom-color: transparent;
+			
+			    -webkit-animation: spinClock 6s linear infinite; 
+			    		animation: spinClock 6s linear infinite; 
+			}
+			&:after {
+			    content: "";
+			    position: absolute;
+			    top: 15px;
+			    left: 15px;
+			    right: 15px;
+			    bottom: 15px;
+			    border-radius: 50%;
+			    border: 3px solid transparent;
+			    border-color: $white;
+			    border-left-color: transparent;	
+			    -webkit-animation: spinCounterClock 3s linear infinite; 
+			    		animation: spinCounterClock 3s linear infinite; 
+			}
+		}
+	}
+	.loaderBg {
+	    position: fixed;
+	    top: 0;
+	    width: 50%;
+	    height: 100%;
+	    background: $halfBaked;
+	    z-index: 1000;
+	    &.loaderBgLeft {
+		    left: 0;
+		}
+		&.loaderBgRight {
+		    right: 0;
+		} 
+	}
+}
+.loaded {
+	.loaderWrap {
+		visibility: hidden;
+		-webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+		.loader {
+		    opacity: 0;
+		    -webkit-transition: all 0.3s ease-out; 
+		            transition: all 0.3s ease-out;
+		}
+		.loaderBg {
+			&.loaderBgLeft {
+				-webkit-transform: translateX(-100%);
+					-ms-transform: translateX(-100%);  
+						transform: translateX(-100%); 
+			}
+			&.loaderBgRight {
+			    -webkit-transform: translateX(100%);
+			    	-ms-transform: translateX(100%);  
+						transform: translateX(100%);  
+			}
+			&.loaderBgLeft, &.loaderBgRight {
+				-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                		transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			}
+		}
+	} 
+}
+@-moz-keyframes spinCounterClock { 
+	100% { 
+		-moz-transform: rotate(-360deg); 
+	} 
+}
+@-webkit-keyframes spinCounterClock { 
+	100% { 
+		-webkit-transform: rotate(-360deg); 
+	} 
+}
+@keyframes spinCounterClock { 
+	100% { 
+		-webkit-transform: rotate(-360deg); 
+		transform:rotate(-360deg); 
+	} 
+}
+@-moz-keyframes spinClock { 
+	100% { 
+		-moz-transform: rotate(360deg); 
+	} 
+}
+@-webkit-keyframes spinClock { 
+	100% { 
+		-webkit-transform: rotate(360deg); 
+	} 
+}
+@keyframes spinClock { 
+	100% { 
+		-webkit-transform: rotate(360deg); 
+		transform:rotate(360deg); 
+	} 
+}
+/** //loader style end */
+
+/** // modal styles start */
+.modal {
+	position: fixed;
+	z-index: 102;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: table;
+	table-layout: fixed;
+	vertical-align: middle;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 0.5s;
+			transition: opacity 0.5s;
+	&.open {
+		opacity: 1;
+		pointer-events: all;
+	}
+	.modalPos {
+		position: relative;
+		width: calc(100% - 20px);
+		max-width: 820px;
+		max-height: 100%;
+		overflow: scroll;
+		margin: 0 auto;
+		@include bp(sml) {
+			width: calc(100% - 40px);
+		}
+		@include bp(med) {
+			width: calc(100% - 60px);
+		}
+		.icon-cross {
+			position: absolute;
+			background: $white;
+			border-radius: 50%;
+			color: $lightGrey;
+			padding: 7px;
+			top: 0;
+			right: 0;
+			font-size: 1.6rem;
+			cursor: pointer;
+		}
+	}
+	.modalWrap {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.modalBody {
+		@include clearfix();
+		background: $white;
+		img {
+			margin-bottom: 0;
+		}
+		&.modalPad {
+			padding: 15px;
+			@include bp(med) {
+				padding: 20px;
+			}
+		}
+	}
+	.modalCont {
+		display: none;
+		&.show {
+			display: block;
+		}
+	}
+}
+.modalTrig {
+	cursor: pointer;
+}
+/** // modal styles end */
+
+/** // toggle styles start */
+.slideToggle {
+	min-width: 80px;
+	height: 30px;
+	display: inline-block;
+	border-radius: 20px;
+	background: $persianGreen;
+	color: $white;
+	position: relative;
+	p {
+		position: absolute;
+		padding: 1px 7px;
+		margin: 0;
+		margin: 0;
+		line-height: normal;
+		font-size: 2rem;
+	}
+	.leftSide, .rightSide {
+		width: 50%;
+		height: 30px;
+		background: transparent;
+		cursor: pointer;
+	}
+	.leftSide {
+		float: left;
+		p {
+			display: none;
+			left: 0;
+		}
+	}
+	.rightSide {
+		float: right;
+		p {
+			right: 0;
+		}
+	}
+	.circle {
+		width: 30px;
+		height: 30px;
+		background: $white;
+		border: 4px solid $persianGreen;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+/** // toggle styles end */
+
+/** ///////////// - elements.scss - end - ///////////// */

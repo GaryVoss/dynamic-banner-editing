@@ -1,0 +1,55 @@
+/** ///////////// - mixin.scss - start - ///////////// */
+
+/** //Responsive breakpoint mixin start */
+@mixin bp($name) {
+  @if $name == sml {
+    @media (min-width: $smlBP) { @content; }
+  }
+  @else if $name == med {
+    @media (min-width: $medBP) { @content; }
+  }
+  @else if $name == lrg {
+    @media (min-width: $lrgBP)  { @content; }
+  }
+  @else if $name == xlrg {
+    @media (min-width: $xlrgBP)  { @content; }
+  }
+}
+/** //Responsive breakpoint mixin end */
+
+/** //Clearfix mixin start */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin clearfixStop() {
+    &:before,
+    &:after {
+        content: normal;
+        display: block;
+    }
+    &:after {
+        clear: none;
+    }
+}
+/** //Clearfix mixin end */
+
+/** //Grid mixin start */
+@mixin imgGrid($qty, $margin) {
+	width: ((100% - (($qty - 1) * $margin))/$qty);
+	&:nth-child(n) {
+		margin-right: $margin;
+	}
+	&:nth-child(#{$qty}n) {
+		margin-right: 0;
+	}
+}
+/** //Grid mixin end */
+
+/** ///////////// - mixin.scss - end - ///////////// */

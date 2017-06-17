@@ -1,0 +1,12 @@
+$('.submitAll').click(function(){
+	postContactToGoogle120x600();
+	postContactToGoogle160x600();
+	postContactToGoogle300x600();
+	postContactToGoogle300x250();
+	postContactToGoogle480x320();
+	postContactToGoogle970x250();
+	postContactToGoogle728x90();
+	postContactToGoogle468x60();
+	postContactToGoogle320x50();
+	postContactToGoogle300x50();
+});

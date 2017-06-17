@@ -1,0 +1,78 @@
+/** ///////////// - themes.scss - start - ///////////// */
+
+//theme styles start
+.theme1 {
+	background: $mandy;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($mandy, 10);
+		}
+	}
+}
+.theme2 {
+	background: $flamePea;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($flamePea, 10);
+		}
+	}
+}
+.theme3 {
+	background: $halfBaked;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($halfBaked, 10);
+		}
+	}
+}
+.theme4 {
+	background: $persianGreen;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($persianGreen, 10);
+		}
+	}
+}
+.theme5 {
+	background: $goldenDream;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($goldenDream, 10);
+		}
+	}
+}
+.theme6 {
+	background: $qunicy;
+	color: $white;
+	&.btn {
+		&:hover, &.selected {
+			background: darken($qunicy, 10);
+		}
+	}
+}
+.txtTheme1 {
+	color: $mandy;
+}
+.txtTheme2 {
+	color: $flamePea;
+}
+.txtTheme3 {
+	color: $halfBaked;
+}
+.txtTheme4 {
+	color: $persianGreen;
+}
+.txtTheme5 {
+	color: $goldenDream;
+}
+.txtTheme6 {
+	color: $qunicy;
+}
+//theme styles end
+
+/** ///////////// - themes.scss - end - ///////////// */

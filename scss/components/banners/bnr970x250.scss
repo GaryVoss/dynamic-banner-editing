@@ -1,0 +1,135 @@
+#bnrWrapper-970x250 {
+    display: none;
+    background: #fff;
+    color: #575757;
+    font-family: $fontRobotoRegular;
+    font-size: 13px;
+	width: 970px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: content-box;	
+	#innerWrap-970x250 {
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		overflow: hidden;
+	}
+	p, span {
+		line-height: 120%;
+	}
+	#overlay-970x250 {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		background-size: 100% 100%!important;
+	}
+	#btnWrap-970x250 {
+		width: 352px;
+		height: 38px;
+		position: absolute;
+		bottom:15px;
+		right: 0;
+		z-index: 99;
+	}
+	.btn-970x250 {
+		width: 100%;
+		height: 38px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		opacity: 0;
+	}
+	.btn-970x250 p {
+		width: calc(100% - 20px);
+		max-width: 160px;
+		margin: 0 auto;
+		padding: 10px 0;
+		text-align: center;
+		text-transform: lowercase;
+		line-height: normal;
+		font-size: 13px;
+		font-weight: 700;
+		background: #fff;
+		color: #575757;
+	}
+	.btn-970x250 p::first-letter {
+		text-transform: capitalize;
+	}
+	#logo-970x250 {
+		width: 140px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -140px;
+		background-size: 100% 100%!important;
+	}
+	.messageWrap {
+		display: table;
+		width: 352px;
+		position: absolute;
+		top: 10px;
+		right: 0;
+		padding: 0 5px;
+		z-index: 2;
+	}
+	#message1Wrap-970x250, #messageExtraWrap-970x250 {
+		height: 181px;
+	}
+	#message2Wrap-970x250 {
+		display: none;
+	}
+	.message {
+		width: 100%;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 0 10px 0;
+	}
+	.img {
+		width: 470px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 140px;
+		overflow: hidden;
+		background-size: 100% 100%!important;
+	}
+	#roundelWrap-970x250 {
+		display: table;
+		width: 352px;
+		height: 250px;
+		padding: 15px 0px 53px 0px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 3;
+		overflow: visible!important;
+	}
+	#roundelMessage-970x250 { 
+		width: 100%;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#roundel-970x250 {
+		width: 155%;
+		fill: #fff;
+		position: absolute;
+		top: -40%;
+		left: -20%;
+		z-index: -1;
+		-ms-transform: rotate(-30deg);
+	    -webkit-transform: rotate(-30deg);
+	    transform: rotate(-30deg);
+	}
+	.fade {
+		opacity: 0;
+	}
+}	

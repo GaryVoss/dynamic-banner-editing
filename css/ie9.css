@@ -1,0 +1,240 @@
+/** ///////////// - ie9.scss - start - ///////////// */
+/** ///////////// - variable.scss - start - ///////////// */
+/** ///////////// - fonts.scss - start - ///////////// */
+/** // Roboto font */
+@font-face {
+  font-family: 'robotoLight';
+  src: url("../fonts/roboto/roboto-light-webfont.eot");
+  src: url("../fonts/roboto/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-light-webfont.svg#robotoLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoRegular';
+  src: url("../fonts/roboto/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-regular-webfont.svg#robotoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoBold';
+  src: url("../fonts/roboto/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-bold-webfont.svg#robotoBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoBlack';
+  src: url("../fonts/roboto/roboto-black-webfont.eot");
+  src: url("../fonts/roboto/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-black-webfont.woff") format("woff"), url("../fonts/roboto/roboto-black-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-black-webfont.svg#robotoBlack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/** // Good dog font */
+@font-face {
+  font-family: 'goodDog';
+  src: url("../fonts/goodDog/goodDog-webfont.eot");
+  src: url("../fonts/goodDog/goodDog-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/goodDog/goodDog-webfont.woff") format("woff"), url("../fonts/goodDog/goodDog-webfont.ttf") format("truetype"), url("../fonts/goodDog/goodDog-webfont.svg#goodDog") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/** // Icon font */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icons/icomoon.eot?qif47s");
+  src: url("../fonts/icons/icomoon.eot?qif47s#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?qif47s") format("truetype"), url("../fonts/icons/icomoon.woff?qif47s") format("woff"), url("../fonts/icons/icomoon.svg?qif47s#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrowFillDown:before {
+  content: "\e900"; }
+
+.icon-dot:before {
+  content: "\e901"; }
+
+.icon-dotOutline:before {
+  content: "\e902"; }
+
+.icon-cross:before {
+  content: "\e903"; }
+
+.icon-info:before {
+  content: "\e904"; }
+
+/** ///////////// - fonts.scss - end - ///////////// */
+/** ////breakpoint variables start */
+/** ////breakpoint variables end */
+/** ////font variables start */
+/** //font roboto */
+/** //font good dog */
+/** ////colour variables start */
+/** //global colours */
+/** //body copy colour */
+/** ///////////// - variable.scss - start - ///////////// */
+/** ///////////// - mixin.scss - start - ///////////// */
+/** //Responsive breakpoint mixin start */
+/** //Responsive breakpoint mixin end */
+/** //Clearfix mixin start */
+/** //Clearfix mixin end */
+/** //Grid mixin start */
+/** //Grid mixin end */
+/** ///////////// - mixin.scss - end - ///////////// */
+/** IE9 grid fix start */
+.logoRow .logoGroup {
+  width: 250px; }
+
+.mob1 {
+  width: 8.33%; }
+
+.mob2 {
+  width: 16.66%; }
+
+.mob3 {
+  width: 25%; }
+
+.mob4 {
+  width: 33.33%; }
+
+.mob5 {
+  width: 41.66%; }
+
+.mob6 {
+  width: 50%; }
+
+.mob7 {
+  width: 58.33%; }
+
+.mob8 {
+  width: 66.66%; }
+
+.mob9 {
+  width: 75%; }
+
+.mob10 {
+  width: 83.33%; }
+
+.mob11 {
+  width: 91.66%; }
+
+.mob12 {
+  width: 100%; }
+
+@media (min-width: 480px) {
+  .sml1 {
+    width: 8.33%; }
+  .sml2 {
+    width: 16.66%; }
+  .sml3 {
+    width: 25%; }
+  .sml4 {
+    width: 33.33%; }
+  .sml5 {
+    width: 41.66%; }
+  .sml6 {
+    width: 50%; }
+  .sml7 {
+    width: 58.33%; }
+  .sml8 {
+    width: 66.66%; }
+  .sml9 {
+    width: 75%; }
+  .sml10 {
+    width: 83.33%; }
+  .sml11 {
+    width: 91.66%; }
+  .sml12 {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .med1 {
+    width: 8.33%; }
+  .med2 {
+    width: 16.66%; }
+  .med3 {
+    width: 25%; }
+  .med4 {
+    width: 33.33%; }
+  .med5 {
+    width: 41.66%; }
+  .med6 {
+    width: 50%; }
+  .med7 {
+    width: 58.33%; }
+  .med8 {
+    width: 66.66%; }
+  .med9 {
+    width: 75%; }
+  .med10 {
+    width: 83.33%; }
+  .med11 {
+    width: 91.66%; }
+  .med12 {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  .lrg1 {
+    width: 8.33%; }
+  .lrg2 {
+    width: 16.66%; }
+  .lrg3 {
+    width: 25%; }
+  .lrg4 {
+    width: 33.33%; }
+  .lrg5 {
+    width: 41.66%; }
+  .lrg6 {
+    width: 50%; }
+  .lrg7 {
+    width: 58.33%; }
+  .lrg8 {
+    width: 66.66%; }
+  .lrg9 {
+    width: 75%; }
+  .lrg10 {
+    width: 83.33%; }
+  .lrg11 {
+    width: 91.66%; }
+  .lrg12 {
+    width: 100%; } }
+
+@media (min-width: 1200px) {
+  .xlrg1 {
+    width: 8.33%; }
+  .xlrg2 {
+    width: 16.66%; }
+  .xlrg3 {
+    width: 25%; }
+  .xlrg4 {
+    width: 33.33%; }
+  .xlrg5 {
+    width: 41.66%; }
+  .xlrg6 {
+    width: 50%; }
+  .xlrg7 {
+    width: 58.33%; }
+  .xlrg8 {
+    width: 66.66%; }
+  .xlrg9 {
+    width: 75%; }
+  .xlrg10 {
+    width: 83.33%; }
+  .xlrg11 {
+    width: 91.66%; }
+  .xlrg12 {
+    width: 100%; } }
+
+/** IE9 grid fix end */
+/** ///////////// - ie9.scss - end - ///////////// */

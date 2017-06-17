@@ -1,0 +1,204 @@
+/** ///////////// - ie9.scss - start - ///////////// */
+
+@import 'variable';
+@import 'mixin';
+
+/** IE9 grid fix start */
+.logoRow {
+	.logoGroup {
+		width: 250px;
+	}
+}
+
+
+.mob1 { 
+	width: 8.33%;
+}
+.mob2 { 
+	width: 16.66%;
+}
+.mob3 { 
+	width: 25%;
+}
+.mob4 { 
+	width: 33.33%;
+}
+.mob5 { 
+	width: 41.66%;
+}
+.mob6 { 
+	width: 50%;
+}
+.mob7 { 
+	width: 58.33%;
+}
+.mob8 { 
+	width: 66.66%;
+}
+.mob9 { 
+	width: 75%;
+}
+.mob10 { 
+	width: 83.33%;
+}
+.mob11 { 
+	width: 91.66%;
+}
+.mob12 { 
+	width: 100%;
+}
+@include bp(sml) {
+	.sml1 { 
+		width: 8.33%;
+	}
+	.sml2 { 
+		width: 16.66%;
+	}
+	.sml3 { 
+		width: 25%;
+	}
+	.sml4 { 
+		width: 33.33%;
+	}
+	.sml5 { 
+		width: 41.66%;
+	}
+	.sml6 { 
+		width: 50%;
+	}
+	.sml7 { 
+		width: 58.33%;
+	}
+	.sml8 { 
+		width: 66.66%;
+	}
+	.sml9 { 
+		width: 75%;
+	}
+	.sml10 { 
+		width: 83.33%;
+	}
+	.sml11 { 
+		width: 91.66%;
+	}
+	.sml12 { 
+		width: 100%;
+	}
+}
+@include bp(med) {
+	.med1 { 
+		width: 8.33%;
+	}
+	.med2 { 
+		width: 16.66%;
+	}
+	.med3 { 
+		width: 25%;
+	}
+	.med4 { 
+		width: 33.33%;
+	}
+	.med5 { 
+		width: 41.66%;
+	}
+	.med6 { 
+		width: 50%;
+	}
+	.med7 { 
+		width: 58.33%;
+	}
+	.med8 { 
+		width: 66.66%;
+	}
+	.med9 { 
+		width: 75%;
+	}
+	.med10 { 
+		width: 83.33%;
+	}
+	.med11 { 
+		width: 91.66%;
+	}
+	.med12 { 
+		width: 100%;
+	}
+}
+@include bp(lrg) {
+	.lrg1 { 
+		width: 8.33%;
+	}
+	.lrg2 { 
+		width: 16.66%;
+	}
+	.lrg3 { 
+		width: 25%;
+	}
+	.lrg4 { 
+		width: 33.33%;
+	}
+	.lrg5 { 
+		width: 41.66%;
+	}
+	.lrg6 { 
+		width: 50%;
+	}
+	.lrg7 { 
+		width: 58.33%;
+	}
+	.lrg8 { 
+		width: 66.66%;
+	}
+	.lrg9 { 
+		width: 75%;
+	}
+	.lrg10 { 
+		width: 83.33%;
+	}
+	.lrg11 { 
+		width: 91.66%;
+	}
+	.lrg12 { 
+		width: 100%;
+	}
+}
+@include bp(xlrg) {
+	.xlrg1 { 
+		width: 8.33%;
+	}
+	.xlrg2 { 
+		width: 16.66%;
+	}
+	.xlrg3 { 
+		width: 25%;
+	}
+	.xlrg4 { 
+		width: 33.33%;
+	}
+	.xlrg5 { 
+		width: 41.66%;
+	}
+	.xlrg6 { 
+		width: 50%;
+	}
+	.xlrg7 { 
+		width: 58.33%;
+	}
+	.xlrg8 { 
+		width: 66.66%;
+	}
+	.xlrg9 { 
+		width: 75%;
+	}
+	.xlrg10 { 
+		width: 83.33%;
+	}
+	.xlrg11 { 
+		width: 91.66%;
+	}
+	.xlrg12 { 
+		width: 100%;
+	}
+}
+/** IE9 grid fix end */
+
+/** ///////////// - ie9.scss - end - ///////////// */
